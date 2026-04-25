@@ -6,6 +6,7 @@
     <title>GreyVh - PORTOFOLIO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -16,119 +17,143 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .hero-bg {
-            background-image: url('https://media.discordapp.net/attachments/1492156958902325260/1492816796665905202/pngtree-futuristic-blue-arrow-with-black-space-vector-steel-trendy-speed-vector-png-image_30762304.jpg?ex=69df587b&is=69de06fb&hm=3800e273f417899cec9c68e96ec0065427d66997b8d1a62f85eeca721712624c&=&format=webp');
+            background-image: url('https://media.discordapp.net/attachments/1492156958902325260/1492816796665905202/pngtree-futuristic-blue-arrow-with-black-space-vector-steel-trendy-speed-vector-png-image_30762304.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
     </style>
 </head>
+
 <body class="bg-slate-950 text-white font-sans">
 
-    <nav class="fixed w-full z-50 glass">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-widest uppercase">Grey<span class="text-blue-500">Vh</span></h1>
-            <div class="space-x-8 hidden md:flex font-medium">
-                <a href="#home" class="hover:text-blue-400 transition">Home</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-            </div>
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 glass">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold tracking-widest uppercase">Grey<span class="text-blue-500">Vh</span></h1>
+        <div class="space-x-8 hidden md:flex font-medium">
+            <a href="#home" class="hover:text-blue-400">Home</a>
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#skills" class="hover:text-blue-400">Skills</a>
+            <a href="#pricing" class="hover:text-blue-400">Pricing</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="home" class="relative h-screen flex items-center justify-center hero-bg">
-        <div class="absolute inset-0 bg-slate-950/70"></div>
+<!-- HERO -->
+<section id="home" class="relative h-screen flex items-center justify-center hero-bg">
+    <div class="absolute inset-0 bg-slate-950/70"></div>
 
-        <div class="relative z-10 text-center px-6">
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg">
-                Halo, I'm <span class="text-blue-500 text-gradient">GreyVh</span>
-            </h2>
-            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto drop-shadow-md">
-                I’m passionate about turning ideas into powerful digital solutions using clean code and intuitive design. My main focus is on building Bots and Web Apps that are fast, reliable, and easy to use. I enjoy solving problems, optimizing performance, and creating tools that make life easier in the digital world.
-            </p>
-            <div class="flex gap-4 justify-center">
-                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg shadow-blue-500/20">
-                    See the project
-                </a>
-                <a href="#contact" class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold transition duration-300">
-                    contact me
-                </a>
-            </div>
+    <div class="relative z-10 text-center px-6">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">
+            Halo, I'm <span class="text-blue-500">GreyVh</span>
+        </h2>
+        <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+            I build Discord Bots & Web Apps that are fast, reliable, and easy to use.
+        </p>
+        <div class="flex gap-4 justify-center">
+            <a href="#projects" class="bg-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-700">
+                See Project
+            </a>
+            <a href="#contact" class="border border-white/30 px-8 py-3 rounded-full hover:bg-white/10">
+                Contact Me
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projects" class="py-20 bg-slate-900/50">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center">NEW PROJECT</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="glass p-6 rounded-2xl hover:-translate-y-2 transition duration-300 group">
-                    <div class="h-40 bg-blue-500/10 rounded-lg mb-4 flex items-center justify-center group-hover:bg-blue-500/20 transition">
-                        <i class="fab fa-discord text-5xl text-blue-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Music Bot VEXO MX</h4>
-                    <p class="text-slate-400 mb-4 text-sm">Advanced music bot with third-party API integration and intents gateway management.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded">NODE.JS</span>
-                        <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded">DISCORD.JS</span>
-                    </div>
-                </div>
+<!-- PROJECT -->
+<section id="projects" class="py-20 bg-slate-900/50">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-12 text-center">PROJECT</h3>
 
-                <div class="glass p-6 rounded-2xl hover:-translate-y-2 transition duration-300 group">
-                    <div class="h-40 bg-emerald-500/10 rounded-lg mb-4 flex items-center justify-center group-hover:bg-emerald-500/20 transition">
-                        <i class="fas fa-code text-5xl text-emerald-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Personal Portofolio</h4>
-                    <p class="text-slate-400 mb-4 text-sm">A static website that is responsive and optimized for high performance.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded">HTML/CSS</span>
-                        <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded">VERCEL</span>
-                    </div>
-                </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="glass p-6 rounded-2xl">
+                <i class="fab fa-discord text-5xl text-blue-400 mb-4"></i>
+                <h4 class="text-xl font-bold">Music Bot</h4>
+                <p class="text-slate-400 text-sm">Advanced Discord music bot</p>
             </div>
-        </div>
-    </section>
 
-    <section id="skills" class="py-20 bg-slate-950">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center text-slate-400">Tools & Skills</h3>
-            <div class="flex flex-wrap justify-center gap-12 opacity-60">
-                <i class="fab fa-node-js text-6xl hover:text-green-500 transition duration-300"></i>
-                <i class="fab fa-js text-6xl hover:text-yellow-400 transition duration-300"></i>
-                <i class="fab fa-html5 text-6xl hover:text-orange-500 transition duration-300"></i>
-                <i class="fab fa-github text-6xl hover:text-white transition duration-300"></i>
-                <i class="fab fa-git-alt text-6xl hover:text-red-500 transition duration-300"></i>
+            <div class="glass p-6 rounded-2xl">
+                <i class="fas fa-code text-5xl text-emerald-400 mb-4"></i>
+                <h4 class="text-xl font-bold">Portfolio Website</h4>
+                <p class="text-slate-400 text-sm">Responsive & fast website</p>
             </div>
-        </div>
-    </section>
 
-    <section id="contact" class="py-24 bg-slate-900">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-4">PERSONAL INFO</h2>
-            <p class="text-slate-400 mb-10 max-w-lg mx-auto">I'm always open to discussing new projects or simply sharing experiences.</p>
-            
-            <div class="flex justify-center space-x-8">
-                <a href="https://github.com/GrryXyz" target="_blank" title="Buka GitHub" 
-                   class="text-4xl text-slate-400 hover:text-white transition-all transform hover:scale-110">
-                    <i class="fab fa-github"></i>
-                </a>
-                
-                <a href="https://discord.com/users/888262783655890974" target="_blank" title="Chat di Discord"
-                   class="text-4xl text-slate-400 hover:text-blue-400 transition-all transform hover:scale-110">
-                    <i class="fab fa-discord"></i>
-                </a>
-                
-                <a href="mailto:greyvaldy16@gmail.com?subject=Tanya%20Proyek" title="Kirim Email"
-                   class="text-4xl text-slate-400 hover:text-red-400 transition-all transform hover:scale-110">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-slate-950 text-center">
+    <h3 class="text-3xl font-bold mb-10 text-slate-400">Skills</h3>
+
+    <div class="flex justify-center gap-10 text-5xl opacity-60">
+        <i class="fab fa-node-js hover:text-green-500"></i>
+        <i class="fab fa-js hover:text-yellow-400"></i>
+        <i class="fab fa-html5 hover:text-orange-500"></i>
+        <i class="fab fa-github hover:text-white"></i>
+    </div>
+</section>
+
+<!-- RATE CARD -->
+<section id="pricing" class="py-20 bg-slate-900/50">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-12 text-center">RATE CARD</h3>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="glass p-6 rounded-2xl text-center">
+                <h4 class="text-xl font-bold">Basic</h4>
+                <p class="text-blue-400 text-lg my-3">Rp500K/month</p>
+                <ul class="text-slate-400 text-sm space-y-2">
+                    <li>Moderation chat</li>
+                    <li>2–4 hours/day</li>
+                    <li>Warning & mute</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <footer class="py-10 text-center border-t border-white/5 text-slate-500 text-sm bg-slate-950">
-        <p>&copy; 2026 GreyVh.  made with<span class="text-red-500">❤️</span> And Tailwind CSS.</p>
-    </footer>
+            <div class="glass p-6 rounded-2xl text-center border border-blue-500">
+                <h4 class="text-xl font-bold">Standard ⭐</h4>
+                <p class="text-blue-400 text-lg my-3">Rp1.2JT/month</p>
+                <ul class="text-slate-400 text-sm space-y-2">
+                    <li>4–6 hours/day</li>
+                    <li>Handle report</li>
+                    <li>Event</li>
+                </ul>
+            </div>
+
+            <div class="glass p-6 rounded-2xl text-center">
+                <h4 class="text-xl font-bold">Premium</h4>
+                <p class="text-blue-400 text-lg my-3">Rp2.5JT/month</p>
+                <ul class="text-slate-400 text-sm space-y-2">
+                    <li>6–8 hours/day</li>
+                    <li>Manage community</li>
+                    <li>Full support</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-slate-900 text-center">
+    <h2 class="text-4xl font-bold mb-6">CONTACT</h2>
+
+    <div class="flex justify-center gap-8 text-4xl">
+        <a href="https://github.com/GrryXyz" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/888262783655890974" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="mailto:greyvaldy16@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-slate-500 text-sm">
+    © 2026 GreyVh
+</footer>
 
 </body>
 </html>
